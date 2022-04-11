@@ -21,13 +21,13 @@ export default function Index() {
 						<img src="https://fountain-pay.com/images/favicon.png" className="logo" alt="LOGO" />
 						<h2 className="top-margin">Revue App</h2>
 						<p className="text-white">
-							Make reviews on staff's performance
+							Make anonymous reviews on staffs
 							<br /> In your organzation
 						</p>
 					</div>
 				</div>
 				<div className="col-md-6 side p-5 d-flex flex-column justify-content-center">
-					<img src="https://fountain-pay.com/images/favicon.png" className="logo d-block d-md-none" alt="LOGO" />
+					{/* <img src="https://fountain-pay.com/images/favicon.png" className="logo d-block d-md-none" alt="LOGO" /> */}
 					<Outlet />
 					{/* <Routes> */}
 					{/* <Route exact path="/comment">

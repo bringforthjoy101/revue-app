@@ -1,20 +1,19 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useNavigate, useLocation } from 'react-router-dom'
-import { useSelector, useDispatch } from 'react-redux'
-import { Formik, Field } from 'formik'
+import { useDispatch } from 'react-redux'
 import { swal } from '../../utilities/swal'
-import axios from 'axios'
 import { apiRequest } from '../../utilities/axios'
 // import { AvForm, AvInput } from 'availity-reactstrap-validation'
 import { Button, FormGroup, Label, FormText } from 'reactstrap'
 
 export default Comment = () => {
-	const [msg, setMsg] = useState(null)
-	const apiUrl = process.env.REACT_APP_API_ENDPOINT
-
-	const search = useLocation().search
-	const ref = new URLSearchParams(search).get('ref')
 	const [staffs, setStaffs] = useState(null)
+	const [commentData, setCommentData] = useState({
+		comment: '',
+		staffId: '',
+		businessId: 1,
+	})
+	const [isSubmitting, setIsSubmitting] = useState(false)
 
 	useEffect(() => {
 		const getStaffs = async () => {
@@ -35,21 +34,8 @@ export default Comment = () => {
 		getStaffs()
 	}, [])
 
-	const dispatch = useDispatch()
-	const navigate = useNavigate()
-
-	const [commentData, setCommentData] = useState({
-		comment: '',
-		staffId: '',
-		businessId: 1,
-	})
-
-	const [isSubmitting, setIsSubmitting] = useState(false)
-
-	const onSubmit = async (event, errors) => {
-		// console.log(errors)
+	const onSubmit = async (event) => {
 		event?.preventDefault()
-		// if (errors && !errors.length) {
 		const body = JSON.stringify(commentData)
 		console.log(body)
 		try {
@@ -63,7 +49,7 @@ export default Comment = () => {
 						staffId: '',
 						businessId: 1,
 					})
-					swal('Great job!', response.data.message, 'success')
+					swal('Great job!', 'Comment Submitted', 'success')
 				} else {
 					swal('Oops!', response.data.message, 'error')
 				}
@@ -74,16 +60,15 @@ export default Comment = () => {
 		} catch (error) {
 			console.error({ error })
 		}
-		// }
 	}
 
 	return (
 		<div>
 			<h3>
-				Make Review Comments <br />
-				On staffs
+				Send Review Comments <br />
+				Anonymously
 			</h3>
-			<p className="p-text">Welcome to Revue App where you get feedback on your performance</p>
+			<p className="p-text">Welcome to Revue App </p>
 
 			<form onSubmit={onSubmit}>
 				<FormGroup>
