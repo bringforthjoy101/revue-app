@@ -26,8 +26,8 @@ function Home() {
 function App() {
 	return (
 		<Routes>
-			<Route path="/" element={<Home />} />
-			<Route path="/comment" element={<Index />}>
+			{/* <Route path="/" element={<Home />} /> */}
+			<Route path="/" element={<Index />}>
 				<Route index element={<Comment />} />
 				{/* <Route path="comments" element={<Comments />} /> */}
 			</Route>
