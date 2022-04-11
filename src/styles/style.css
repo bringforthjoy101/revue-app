@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+  }
+  
+  .investa-font {
+    font-family: 'Poppins', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .investa-font p {
+    font-family: 'Poppins', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .back{
+    background: url("https://martech.org/wp-content/uploads/2016/04/ss-rating-review-stars.jpg"); 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    color: #ffffff;
+  }
+  
+  .cover {
+    background: rgba(0, 0, 190, .4);
+    /*height: 690px;*/
+    /*padding: 0 50px;*/
+    /*background-size: cover;*/
+    /*background-attachment: fixed;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .body {
+    height: 100vh;
+  }
+  
+  .logo{
+    width: 100px;
+    /*margin-top: 150px;*/
+  }
+  
+  .back h2{
+    font-family: Arial black, Helvetica, sans-serif;  
+    font-weight: bold;
+    font-size: 25pt;
+    margin-top: 20px;
+  }
+  .back p, .side p {
+    font-size: 16pt;
+    line-height: 1.3em; 
+    margin-top: 15px;
+  }
+  
+  /*.side{*/
+  /*  padding: 0 150px 0 130px;*/
+  /*}*/
+  
+  /*@media screen and (max-width: 940px) {*/
+  /*    .side{*/
+  /*      padding: 10px;*/
+  /*    }*/
+  /*}*/
+  
+  .side h3 {
+    font-family: Arial black, Helvetica, sans-serif;  
+    font-weight: bold;
+    font-size: 2em;
+    margin-top: 1em;
+    color: rgb(0, 0, 0);
+  }
+  
+  .side .input {
+    margin-top: 60px;
+    padding: 17px 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #e5e5e5;
+    z-index: -10;
+  }
+  
+  .form-control {
+    margin-top: 20px;
+    padding: 17px 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #e5e5e5;
+  }
+  
+  .side .form-check {
+    margin-top: 20px;
+  }
+  
+  .side label {
+    font-size: 9pt;
+  }
+  
+  .side label b{
+    color: #3081ee;
+  }
+  
+  .side h4{
+    font-size: 9pt;
+    margin-top: 20px;
+  }
+  
+  .link{
+    color: blue;
+    text-decoration: none;
+  }
+  
+  .signup{
+    box-shadow: 2px 16px 32px rgba(0, 0, 255, .5);
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 13px 0; 
+  }
+  
+  .p-text{
+    font-size: 14pt !important;
+  }
+  
+  .pass{
+    margin-top: 0 !important;
+    font-style: none;
+    font-size: 9pt;
+    text-align: right !important;
+  }
+  
+  .reg{
+    font-size: 12pt !important;
+    margin-top: 35px !important;
+  }
+  
+  .label-text{
+    margin-top: 20px;
+    font-size: 10.5pt !important;
+  }
+  
+  .password-strength {
+    position: relative;
+    top: -22px;
+  }
+  
+  .password-strength p{
+    font-size: 10pt !important;
+    font-weight: bold;
+  }
+  
+  .progress{
+    height: 5px;  
+  }
+  
+  .text-right{
+    text-align: right !important;
+    margin: -40px 10px 2px 0px;
+  }
+  
+  .form-group i{
+    cursor: pointer;
+    color: gray;
+  }
+  
+  .verify{
+    margin-top: 60px !important;
+    text-align: center;
+  }
+  
+  .form-verify{
+    display: inline;
+    margin: 0 8px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+    width: 1.5em;
+    padding: 5px 0;
+    transition: all .2s ease-in-out;
+  }
+  
+  @media screen and (max-width: 940px) {
+    .form-verify{
+      margin: 0 6px;
+      
+    }
+  }
