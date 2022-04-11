@@ -43,8 +43,8 @@ export const Comments = () => {
 			))}
 
 			<h4 className="text-center reg">
-				Back to post comments ?{' '}
-				<Link to="/comment" className="link">
+				Back to post comment ?{' '}
+				<Link to="/" className="link">
 					Click Here
 				</Link>
 			</h4>
